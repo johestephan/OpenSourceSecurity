@@ -1,6 +1,6 @@
 # OpenSource Security Tooling
 
-*disclaimer*: The following information was put together to the best of my knowledge. Software might change or vanish and maybe not fit your purpose, please see it as a collection of ideas and nothing more.
+*disclaimer*: The following information was put together to the best of my knowledge. Software might change or vanish and maybe not fit your purpose, please see it as a collection of ideas and nothing more. Also this list was never meant to be complete. 
 
 ### About me
 I am working as a security Analyst / Consultant for a while now. part of my private craziness is to provide the same (cyber-) security standard I want to achieve for my clients also for my private life, but purely based on open source (mainly)
@@ -9,6 +9,11 @@ I am working as a security Analyst / Consultant for a while now. part of my priv
 ### ClamAV
 
 ## Firewall
+Linux/Unix based firewalls are pretty common and so we have many different flavors available, the border between firewall and IDPS is a pretty tiny gray line, as most of the products can utilise snort or suricata (at least \*sense does it pretty well)
+* https://www.pfsense.org/
+* https://opnsense.org/ (fork of pfsense)
+* https://vyos.io/
+* https://www.ipfire.org/
 
 ## IDS / IDPS
 In this area two of the standard products are available.
@@ -27,9 +32,10 @@ The availability of systems should still be of concern to most of the people. An
 * https://www.zabbix.com/
 * https://www.nagios.org/
 * https://icinga.com/
+
 ###  ELK Stack
 While enterprise user turn to SIEM solutions in order to detect and protect, the ELK Stack (Elasticsearch + Logstash + Kibana) provides a solid approach. I for myself use it to collect the logs of my cloud servers and check for "interesting" log entries.
-* https://www.elastic.co/elk-stack
+* https://www.elastic.co/elk-stacka
 * https://github.com/johestephan/Configurations/tree/master/Elasticsearch
 
 ## Threat Intelligence
