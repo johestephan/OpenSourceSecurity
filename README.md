@@ -15,10 +15,19 @@ Linux/Unix based firewalls are pretty common and so we have many different flavo
 * https://vyos.io/
 * https://www.ipfire.org/
 
-## IDS / IDPS
-In this area two of the standard products are available.
+### IDS / IDPS
+In this area two of the standard products are available. Snort is maybe the most famous, and due to the changes introduced with version 3.x it will stay that way for a bit longer.
 * https://www.snort.org/
 * https://suricata-ids.org/
+
+### Fail2Ban
+More in the Host based firewall area is Fail2Ban, actually you can configure a lot of services whereas SSH is the standard. After some login attempts or access attempts Fail2Ban will block you on the host firewall.
+*https://www.fail2ban.org/
+
+## WAF (Web Application Firewall)
+### ModSecurity
+You can add this mod to your webserver (Apache works best, Nginx is still a bit of work) and add some WAF capabilities to it. Please take a look at all the different sources available, especially the OWASP ones.
+* https://www.modsecurity.org/
 
 ## Password Manager
 ### Keepass
@@ -34,12 +43,19 @@ The availability of systems should still be of concern to most of the people. An
 * https://icinga.com/
 
 ###  ELK Stack
-While enterprise user turn to SIEM solutions in order to detect and protect, the ELK Stack (Elasticsearch + Logstash + Kibana) provides a solid approach. I for myself use it to collect the logs of my cloud servers and check for "interesting" log entries.
-* https://www.elastic.co/elk-stacka
+curl --data-binary @filename http://example.com/
+* https://www.elastic.co/elk-stack
 * https://github.com/johestephan/Configurations/tree/master/Elasticsearch
 
 ## Threat Intelligence
 ## MISP 
 The Malware Indicator Sharing Platform is a wide used tool when it comes to the sharing of IOCs and attack descriptions. It is fairly easy (or at least well documented) to setup.
 * http://www.misp-project.org/
+
+## Vulnerability Scanning
+### ELK + nmap
+nmap on its own is the standard scanning tool since forever and thanks to the community also for the years to come. I would recommend to try the combination of vulscan + nmap + ELK
+* https://github.com/scipag/vulscan
+* https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network
+* https://github.com/logstash-plugins/logstash-codec-nmap
 
