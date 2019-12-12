@@ -7,6 +7,8 @@ I am working as a security Analyst / Consultant for a while now. part of my priv
 
 ## Antivirus
 ### ClamAV
+Free and opensource antivirus scanner (daemon and on demand), with an variety of malware signature and 
+* https://www.clamav.net/
 
 ## Firewall
 Linux/Unix based firewalls are pretty common and so we have many different flavors available, the border between firewall and IDPS is a pretty tiny gray line, as most of the products can utilise snort or suricata (at least \*sense does it pretty well)
@@ -48,9 +50,13 @@ curl --data-binary @filename http://example.com/
 * https://github.com/johestephan/Configurations/tree/master/Elasticsearch
 
 ## Threat Intelligence
-## MISP 
+### MISP 
 The Malware Indicator Sharing Platform is a wide used tool when it comes to the sharing of IOCs and attack descriptions. It is fairly easy (or at least well documented) to setup.
 * http://www.misp-project.org/
+
+### OpenCTI
+Another open source Threat Intelligence Platform
+* https://www.opencti.io/en/
 
 ## Vulnerability Scanning
 ### ELK + nmap
